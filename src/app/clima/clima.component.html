@@ -1,0 +1,14 @@
+<p>
+  clima works!
+</p>
+
+<p>
+  Ciudad:{{resultado.main.temp}}
+</p>
+
+<input type="text" #ciudad>
+<button (click)="consultar(ciudad)">Enviar</button>
+
+<p>
+  La temperatura es {{ciudad.value}}: {{resultado.main.temp}}
+</p>
